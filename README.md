@@ -9,6 +9,7 @@ Keep in mind that the screenshot borders need to be as accurate as possible to t
 The CNN has been trained using GPU so it might raise an error when only CPU is available. In the "best model loading" inside Jupiter notebook i added the code to load the tensors on CPU.
 
 The CNN has been trained avoiding the following pieces sets:
+```
 anarcandy      too weirdly shaped
 disguised      too weirdly shaped
 horsey         too weirdly shaped
@@ -17,6 +18,7 @@ letter         too weirdly shaped
 mono           monochromatic
 reillycraig    too small
 shapes         too weirdly shaped
+```
 
 The whole Jupiter notebook is gathering the data by connecting to my Google Drive, except for the DataLoader part in which i copy the data directly into Colab to massively speed up the training part.  
 As long as your Drive looks like this:
