@@ -1,4 +1,4 @@
-# Lichess_Screenshot_To_FEN
+# Lichess screenshot conversion to FEN using a Convolutional Neural Network
 Developing a CNN to recognize lichess pieces from a screenshot and create the related FEN, since many puzzle/opening/training videos on youtube do not include it nor the PNG. 
  
 The goal is to build a model strong enough to recognize all the pieces from various pieces set and pieces backgrounds, in order to evaluate a position without having to recreate it manually using the board editor.
@@ -65,3 +65,4 @@ The final result once the code is fully run should look like this:
                         └── black/
                             └── (black pieces)
 ```
+I haven't tested it but chess.com pieces sets should be fairly similar to lichess.org ones therefore the classification should match the same accuracy on screenshot taken from their chessboard too.
