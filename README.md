@@ -20,7 +20,7 @@ shapes         too weirdly shaped
 
 The whole Jupiter notebook is gathering the data by connecting to my Google Drive, except for the DataLoader part in which i copy the data directly into Colab to massively speed up the training part.
 As long as your Drive looks like this:
-
+```
 .
 └── content/
     └── gdrive/
@@ -36,9 +36,10 @@ As long as your Drive looks like this:
                         │   └── (white pieces)
                         └── black/
                             └── (black pieces)
+```
 there shouldn't be any problem running the code.
 The final result once the code is fully run should look like this:
-
+```
 .
 └── content/
     └── gdrive/
@@ -63,3 +64,4 @@ The final result once the code is fully run should look like this:
                         │   └── (white pieces)
                         └── black/
                             └── (black pieces)
+```
