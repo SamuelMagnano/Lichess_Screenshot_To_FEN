@@ -67,4 +67,4 @@ The final result once the code is fully run should look like this:
                         └── black/
                             └── (black pieces)
 ```
-I haven't tested it but chess.com pieces sets should be fairly similar to lichess.org ones therefore the classification should match the same accuracy on screenshot taken from their chessboard too.
+I haven't tested it but chess.com pieces sets should be fairly similar to lichess.org ones therefore the classification should match the same accuracy on screenshot taken from their chessboards too.
