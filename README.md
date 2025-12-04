@@ -4,7 +4,7 @@ Developing a CNN to recognize lichess pieces from a screenshot and create the re
 The goal is to build a model strong enough to recognize all the pieces from various pieces set and pieces backgrounds, in order to evaluate a position without having to recreate it manually using the board editor.
 
 All the zipped files need to be unzipped to be used correctly as in the code.  
-Feel free to copy the CNN architecture and state_dict (CNN.pth) and try it yourself on your screenshots after addig them inside the Screenshot_Test folder.  
+Feel free to copy the CNN architecture and state_dict (CNN.pth) and try it yourself on your screenshots after adding them inside the Screenshot_Test folder.  
 Keep in mind that the screenshot borders need to be as accurate as possible to the chessboard boarders, or else weird cropping might happen.  
 The CNN has been trained using GPU so it might raise an error when only CPU is available. In the "best model loading" inside Jupiter notebook i added the code to load the tensors on CPU.
 
