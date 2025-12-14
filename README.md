@@ -4,7 +4,7 @@ Developing a CNN to recognize lichess pieces from a screenshot and create the re
 The goal is to build a model strong enough to recognize all the pieces from various pieces set and pieces backgrounds, in order to evaluate a position without having to recreate it manually using the board editor.
 
 All the zipped files need to be unzipped to be used correctly as in the code.  
-Feel free to copy the CNN architecture and state_dict (CNN.pth) and try it yourself on your screenshots after addig them inside the Screenshot_Test folder.  
+Feel free to copy the CNN architecture and state_dict (CNN.pth) and try it yourself on your screenshots after adding them inside the Screenshot_Test folder.  
 Keep in mind that the screenshot borders need to be as accurate as possible to the chessboard boarders, or else weird cropping might happen.  
 The CNN has been trained using GPU so it might raise an error when only CPU is available. In the "best model loading" inside Jupiter notebook i added the code to load the tensors on CPU.
 
@@ -68,7 +68,7 @@ The final result once the code is fully run should look like this:
                             └── (black pieces)
 ```
 I haven't tested it but chess.com pieces sets should be fairly similar to lichess.org ones therefore the classification should match the same accuracy on screenshot taken from their chessboards too.  
-The NN architecture can be further improved as well as the images transformation. The validation accuracy in the code has some problems since it gives absurd values, eventually i'll try to fix it.
+The NN architecture can be further improved and tested as well as the images transformation. The validation accuracy in the code has some problems since it gives absurd values, eventually i'll try to fix it.
 
 Up to this point i've completed the core part and now that the CNN finally works i can focus on improving the metrics and testing on a greater amount of screenshots and combination.  
 This is my first semi-serious approach to data cleaning and neural networks. I know i overlooked various aspects of the project but for the programming knowledge i have right now i consider what i have done more than enough to grow. 
