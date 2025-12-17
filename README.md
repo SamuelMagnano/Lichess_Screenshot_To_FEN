@@ -68,7 +68,7 @@ The final result once the code is fully run should look like this:
                         └── black/
                             └── (black pieces)
 ```
-Another important step, if you want to test the network on your screenshots, is to comply to the following notation for the images:
+Keep in mind that if you want to test the network on your screenshots, you need to comply to the following notation for the images:
 - 00.*extension*
 - 01.*extension*
 - ...
