@@ -67,8 +67,18 @@ The final result once the code is fully run should look like this:
                         └── black/
                             └── (black pieces)
 ```
-I haven't tested it but chess.com pieces sets should be fairly similar to lichess.org ones therefore the classification should match the same accuracy on screenshot taken from their chessboards too.  
-The NN architecture can be further improved and tested as well as the images transformation. The validation accuracy in the code has some problems since it gives absurd values, eventually i'll try to fix it.
+Another important step, if you want to test the network on your screenshots, is to comply to the following notation for the images:
+- 00.*extension*
+- 01.*extension*
+- ...
+- 10.*extension*
+
+At the end of the project i evaluated the following metrics:
+- per-image accuracy
+- per-image confusion matrix
+- average accuracy
+- per-image per-class recall
+- per-class average recall 
 
 Up to this point i've completed the core part and now that the CNN finally works i can focus on improving the metrics and testing on a greater amount of screenshots and combination.  
 This is my first semi-serious approach to data cleaning and neural networks. I know i overlooked various aspects of the project but for the programming knowledge i have right now i consider what i have done more than enough to grow. 
