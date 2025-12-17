@@ -6,7 +6,7 @@ The goal is to build a model strong enough to recognize all the pieces from vari
 All the zipped files need to be unzipped to be used correctly as in the code.  
 Feel free to copy the CNN architecture and state_dict (CNN.pth) and try it yourself on your screenshots after adding them inside the Screenshot_Test folder.  
 Keep in mind that the screenshot borders need to be as accurate as possible to the chessboard boarders, or else weird cropping might happen.  
-The CNN has been trained using GPU so it might raise an error when only CPU is available. In the "best model loading" inside Jupiter notebook i added the code to load the tensors on CPU.
+The CNN has been trained using GPU so it might raise an error when only CPU is available. In the "best model loading" inside Jupiter notebook i added the code to load the tensors on CPU.  
 
 The CNN has been trained avoiding the following pieces sets:
 ```
@@ -19,6 +19,7 @@ mono           monochromatic
 reillycraig    too small
 shapes         too weirdly shaped
 ```
+All the material as been gathered following this link: https://github.com/lichess-org/lila/tree/master/public/piece
 
 The whole Jupiter notebook is gathering the data by connecting to my Google Drive, except for the DataLoader part in which i copy the data directly into Colab to massively speed up the training part.  
 As long as your Drive looks like this:
