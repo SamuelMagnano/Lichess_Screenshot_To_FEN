@@ -73,7 +73,7 @@ Keep in mind that if you want to test the network on your screenshots, you need 
 - 00.*extension*
 - 01.*extension*
 - ...
-- 10.*extension*
+- 10.*extension*  
 (if more than 100 then 000.*extension*, i am sure you got the gist of it).  
 
 If you want to check the performances on the screenshot dataset, at the end of the project i used the following metrics:
