@@ -88,3 +88,7 @@ If you want to check the performances on the screenshot dataset, at the end of t
  
 This is my first semi-serious approach to data cleaning and neural networks, with respect to CNN and images.  
 I know i overlooked various aspects but for the programming knowledge i hold right now, and the time i can dedicate to personal projects, i consider what i have done more than enough to grow in that sense.
+
+PS.  
+**Sometimes the import section requires a restart due to conflicts with different Pillow dependencies. Do as suggested by Colab since i am not aware of a solution from such problem.  
+Another problem might arises when loading the .pth since the network is trained on GPU but then, in an unknown way, does not let you load it back inot GPU. Just use CPU for that part since you don't need anything else but the imports, CNN definition and target_names prior to that part of the project.**
