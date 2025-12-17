@@ -79,6 +79,5 @@ At the end of the project i evaluated the following metrics:
 - average accuracy
 - per-image per-class recall
 - per-class average recall 
-
-Up to this point i've completed the core part and now that the CNN finally works i can focus on improving the metrics and testing on a greater amount of screenshots and combination.  
-This is my first semi-serious approach to data cleaning and neural networks. I know i overlooked various aspects of the project but for the programming knowledge i have right now i consider what i have done more than enough to grow. 
+ 
+This is my first semi-serious approach to data cleaning and neural networks. I know i overlooked various aspects of the project but for the programming knowledge i have right now i consider what i have done more than enough to grow.
