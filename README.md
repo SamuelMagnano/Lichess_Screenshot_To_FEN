@@ -74,11 +74,14 @@ Keep in mind that if you want to test the network on your screenshots, you need 
 - ...
 - 10.*extension*
 
-At the end of the project i evaluated the following metrics:
-- per-image accuracy
+If you want to check how good it performs on a given screenshot dataset, at the end of the project i used the following metrics:
 - per-image confusion matrix
-- average accuracy
+- per-image average accuracy
+- per-image per-class accuracy
+- per-image per-class precision
 - per-image per-class recall
-- per-class average recall 
+- overall per-class average accuracy
+- overall per-class average recall
+- overall per-class precision
  
 This is my first semi-serious approach to data cleaning and neural networks. I know i overlooked various aspects of the project but for the programming knowledge i have right now i consider what i have done more than enough to grow.
