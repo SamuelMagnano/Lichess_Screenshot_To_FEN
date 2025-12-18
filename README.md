@@ -3,6 +3,8 @@ Developing a CNN to recognize lichess pieces from a screenshot and create the re
  
 The goal is to build a model strong enough to recognize all the pieces from various pieces set in several backgrounds, in order to evaluate a position without having to recreate it manually using the board editor.
 
+
+##Jupyter Notebook info
 All the zipped files need to be unzipped to be used correctly as in the code.  
 Feel free to copy the CNN architecture and state_dict (CNN.pth and CNN_bleeding) and try it yourself on your screenshots after adding them inside the Screenshot_Test folder.  
 Keep in mind that the screenshot borders need to be as accurate as possible to the chessboard boarders, or else weird cropping might happen.  
@@ -22,7 +24,7 @@ shapes         too weirdly shaped
 All the material as been gathered following this link: https://github.com/lichess-org/lila/tree/master/public/piece  
 Since a few months has passed by, there might be some piece sets not included in the folder i give, feel free to add them in the Lichess_Pieces_Sets folder and do your evaluation on whether keeping them or not.   
 
-The whole Jupiter notebook is gathering the data connecting to Google Drive, except for the DataLoader part in which i copy the data directly into Colab to massively speed up the training phase.  
+The whole Jupyter Notebook is gathering the data connecting to Google Drive, except for the DataLoader part in which i copy the data directly into Colab to massively speed up the training phase.  
 As long as your Drive looks like this:
 ```
 .
@@ -92,3 +94,34 @@ I know i overlooked various aspects but for the programming knowledge i hold rig
 PS.  
 **Sometimes the import section requires a restart due to conflicts with different Pillow dependencies. Do as suggested by Colab since i am not aware of a solution from such problem.  
 Another problem might arises when loading the .pth since the network is trained on GPU but then, in an unknown way, does not let you load it back inot GPU. Just use CPU for that part since you don't need anything else but the imports, CNN definition and target_names prior to that part of the project.**
+
+##Python fen.py
+I also added the .py code to run the CNN model directly on your screenshots, one at a time.  
+Keep in mind that the screenshot size does not matter since i apply resize to make them (800,800), as long as they tend to capture just the chessboard as good as they can be.  
+Assuming you already have pip installed, i leave the commands you need to run to make the project workable on your station:  
+Access via terminal this folder and create the venv (virtual enviroment) inside of it
+```
+python -m venv venv
+```
+Activate the venv
+```
+venv\Scripts\activate
+```
+Install the required libraries
+```
+pip install torch torchvision numpy opencv-python matplotlib pillow cairosvg fentoboardimage
+```
+The commands above need to be done only the first time you create the venv, then every time you access the folder via terminal you can simply run:  
+Activate the venv (only one time per terminal)
+```
+venv\Scripts\activate
+```
+Run the script
+```
+python fen.py
+```
+Once runnig, you will simply need to follow these steps:
+- Drag and drop your screenshot into the terminal
+- An image will display the way the network sees each cell
+- You will get the FEN
+- An image will display the reconstructed chessboard from the predicted FEN, to help you better visualize possible errors
