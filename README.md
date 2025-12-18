@@ -124,5 +124,6 @@ python fen.py
 Once runnig, you will simply need to follow these steps:
 - Drag and drop your screenshot into the terminal
 - An image will display the way the network sees each cell
-- You will get the FEN
-- An image will display the reconstructed chessboard from the predicted FEN, to help you better visualize possible errors
+- Close the image to get the FEN
+- An image will display the reconstructed chessboard from the predicted FEN, to help you better visualize possible errors.
+- Close the image to terminate the execution.
