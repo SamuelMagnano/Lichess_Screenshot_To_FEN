@@ -1,10 +1,8 @@
 # Lichess screenshots conversion to FEN using a Convolutional Neural Network
 Developing a CNN to recognize lichess pieces from a screenshot and create the related FEN, since many puzzle/opening/training videos on youtube do not include it nor the PGN. 
- 
 The goal is to build a model strong enough to recognize all the pieces from various pieces set in several backgrounds, in order to evaluate a position without having to recreate it manually using the board editor.
 
-
-##Jupyter Notebook info
+#Jupyter Notebook info
 All the zipped files need to be unzipped to be used correctly as in the code.  
 Feel free to copy the CNN architecture and state_dict (CNN.pth and CNN_bleeding) and try it yourself on your screenshots after adding them inside the Screenshot_Test folder.  
 Keep in mind that the screenshot borders need to be as accurate as possible to the chessboard boarders, or else weird cropping might happen.  
@@ -95,10 +93,11 @@ PS.
 **Sometimes the import section requires a restart due to conflicts with different Pillow dependencies. Do as suggested by Colab since i am not aware of a solution from such problem.  
 Another problem might arises when loading the .pth since the network is trained on GPU but then, in an unknown way, does not let you load it back inot GPU. Just use CPU for that part since you don't need anything else but the imports, CNN definition and target_names prior to that part of the project.**
 
-##Python fen.py
+#Python fen.py
 I also added the .py code to run the CNN model directly on your screenshots, one at a time.  
 Keep in mind that the screenshot size does not matter since i apply resize to make them (800,800), as long as they tend to capture just the chessboard as good as they can be.  
 Assuming you already have pip installed, i leave the commands you need to run to make the project workable on your station:  
+
 Access via terminal this folder and create the venv (virtual enviroment) inside of it
 ```
 python -m venv venv
