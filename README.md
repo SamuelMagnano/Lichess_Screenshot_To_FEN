@@ -1,5 +1,5 @@
 # Lichess screenshots conversion to FEN using a Convolutional Neural Network
-Developing a CNN to recognize lichess pieces from a screenshot and create the related FEN, since many puzzle/opening/training videos on youtube do not include it nor the PGN. 
+Developing a CNN to recognize lichess pieces from a screenshot and create the related FEN, since many puzzle/opening/training videos on youtube do not include it nor the PGN.  
 The goal is to build a model strong enough to recognize all the pieces from various pieces set in several backgrounds, in order to evaluate a position without having to recreate it manually using the board editor.
 
 #Jupyter Notebook info
