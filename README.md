@@ -110,7 +110,7 @@ Install the required libraries
 ```
 pip install torch torchvision numpy opencv-python matplotlib pillow cairosvg fentoboardimage
 ```
-The commands above need to be done only the first time you create the venv, then every time you access the folder via terminal you can simply run:  
+The commands above need to be executed only the first time you create the venv. Every other time you will access the folder via terminal you can simply run:  
 
 Activate the venv (only one time per terminal)
 ```
@@ -121,7 +121,7 @@ Run the script
 python fen.py
 ```
 
-Once runnig, you will simply need to follow these steps:
+Once running, you will simply need to follow these steps:
 - Drag and drop your screenshot into the terminal
 - An image will display the way the network sees each cell
 - Close the image to get the FEN
