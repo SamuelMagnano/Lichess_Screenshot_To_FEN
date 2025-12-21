@@ -79,12 +79,15 @@ Keep in mind that if you want to test the network on your screenshots, you need 
 If you want to check the performances on the screenshot dataset, at the end of the project i used the following metrics:
 - per-board confusion matrix
 - per-board average accuracy
-- per-board per-class accuracy
+- ~~per-board per-class accuracy~~
 - per-board per-class precision
 - per-board per-class recall
-- overall per-class average accuracy
+- per-board per-class f1 score
+- ~~overall per-class average accuracy~~
+- overall accuracy
 - overall per-class average recall
 - overall per-class average precision
+- overall f1 score  
  
 This is my first semi-serious approach to data cleaning and neural networks, with respect to CNN and images.  
 I know i overlooked various aspects but for the programming knowledge i hold right now, and the time i can dedicate to personal projects, i consider what i have done more than enough to grow in that sense.
