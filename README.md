@@ -98,7 +98,7 @@ Another problem might arises when loading the .pth since the network is trained 
 
 ## Python fen.py
 I also added the .py code to run the CNN model directly on your screenshots, one at a time.  
-Keep in mind that the screenshot size does not matter since i apply resize to make them (800,800), as long as they tend to capture just the chessboard as good as they can be.  
+Keep in mind that the screenshot size does not matter since i apply resize to make them (800,800), as long as they tend to capture just the chessboard as good as they can.  
 Assuming you already have pip installed, i leave the commands you need to run to make the project workable on your station:  
 
 Access via terminal this folder and create the venv (virtual enviroment) inside of it
