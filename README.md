@@ -94,7 +94,7 @@ I know i overlooked various aspects but for the programming knowledge i hold rig
 
 PS.  
 **Sometimes the import section requires a restart due to conflicts with different Pillow dependencies. Do as suggested by Colab since i am not aware of a solution from such problem.  
-Another problem might arises when loading the .pth since the network is trained on GPU but then, in an unknown way, does not let you load it back inot GPU. Just use CPU for that part since you don't need anything else but the imports, CNN definition and target_names prior to that part of the project.**
+Another problem might arises when loading the .pth since the network is trained on GPU but then, in an unknown way, does not let you load it back into GPU for testing. Just use CPU for that part since you don't need anything else but the imports, CNN definition and target_names prior to that part of the project.**
 
 ## Python fen.py
 I also added the .py code to run the CNN model directly on your screenshots, one at a time.  
