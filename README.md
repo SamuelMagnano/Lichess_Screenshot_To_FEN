@@ -94,52 +94,52 @@ I know i overlooked various aspects but for the programming knowledge i hold rig
 
 Below you can find the metrics computed from the predictions on *61* chessboard screenshots:
 ```
-Overall average $${\color{red}accuracy}$$ = 0.981, with 3830/3904 total correct predictions
+Overall average accuracy = 0.981, with 3830/3904 total correct predictions
 
 Overall average piece precision (given everything i said to be of class x, how many were correct)
-Empty piece precision = 0.975
-Black Pawn piece precision = 0.984
-White Pawn piece precision = 1.0
-Black Bishop piece precision = 0.836
-White Bishop piece precision = 0.902
-Black Knight piece precision = 0.836
-White Knight piece precision = 0.623
-Black Rook piece precision = 0.951
-White Rook piece precision = 0.929
-Black Queen piece precision = 0.893
-White Queen piece precision = 0.878
-Black King piece precision = 0.951
-White King piece precision = 1.0
+    Empty piece precision = 0.975
+    Black Pawn piece precision = 0.984
+    White Pawn piece precision = 1.0
+    Black Bishop piece precision = 0.836
+    White Bishop piece precision = 0.902
+    Black Knight piece precision = 0.836
+    White Knight piece precision = 0.623
+    Black Rook piece precision = 0.951
+    White Rook piece precision = 0.929
+    Black Queen piece precision = 0.893
+    White Queen piece precision = 0.878
+    Black King piece precision = 0.951
+    White King piece precision = 1.0
 
 Overall average piece recall (given everything of class x, how many i got right)
-Empty piece recall = 0.998
-Black Pawn piece recall = 0.884
-White Pawn piece recall = 0.957
-Black Bishop piece recall = 0.828
-White Bishop piece recall = 0.902
-Black Knight piece recall = 0.836
-White Knight piece recall = 0.623
-Black Rook piece recall = 0.885
-White Rook piece recall = 0.926
-Black Queen piece recall = 0.902
-White Queen piece recall = 0.918
-Black King piece recall = 0.951
-White King piece recall = 1.0
+    Empty piece recall = 0.998
+    Black Pawn piece recall = 0.884
+    White Pawn piece recall = 0.957
+    Black Bishop piece recall = 0.828
+    White Bishop piece recall = 0.902
+    Black Knight piece recall = 0.836
+    White Knight piece recall = 0.623
+    Black Rook piece recall = 0.885
+    White Rook piece recall = 0.926
+    Black Queen piece recall = 0.902
+    White Queen piece recall = 0.918
+    Black King piece recall = 0.951
+    White King piece recall = 1.0
 
 Overall average piece F1-Score (Measures how well the model performs, in this context better than using accuracy)
-Empty piece F1-Score = 0.986
-Black Pawn piece F1-Score = 0.918
-White Pawn piece F1-Score = 0.974
-Black Bishop piece F1-Score = 0.831
-White Bishop piece F1-Score = 0.902
-Black Knight piece F1-Score = 0.836
-White Knight piece F1-Score = 0.623
-Black Rook piece F1-Score = 0.907
-White Rook piece F1-Score = 0.926
-Black Queen piece F1-Score = 0.896
-White Queen piece F1-Score = 0.889
-Black King piece F1-Score = 0.951
-White King piece F1-Score = 1.0
+    Empty piece F1-Score = 0.986
+    Black Pawn piece F1-Score = 0.918
+    White Pawn piece F1-Score = 0.974
+    Black Bishop piece F1-Score = 0.831
+    White Bishop piece F1-Score = 0.902
+    Black Knight piece F1-Score = 0.836
+    White Knight piece F1-Score = 0.623
+    Black Rook piece F1-Score = 0.907
+    White Rook piece F1-Score = 0.926
+    Black Queen piece F1-Score = 0.896
+    White Queen piece F1-Score = 0.889
+    Black King piece F1-Score = 0.951
+    White King piece F1-Score = 1.0
 Overall average F1-Score = 0.895
 ```
 These metrics might be slightly inflated due to the fact that several screenshots are the same but with a different background and piece set. This decision was made to meet a time constraint, since assigning for each square its real class for 61 completely different boards would have been too time consuming.
