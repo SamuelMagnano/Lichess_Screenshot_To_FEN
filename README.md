@@ -94,7 +94,7 @@ I know i overlooked various aspects but for the programming knowledge i hold rig
 
 Below you can find the metrics computed from the predictions on *61* chessboard screenshots:
 ```
-Overall average accuracy = 0.981, with 3830/3904 total correct predictions
+Overall average $${\color{red}accuracy}$$ = 0.981, with 3830/3904 total correct predictions
 
 Overall average piece precision (given everything i said to be of class x, how many were correct)
 Empty piece precision = 0.975
