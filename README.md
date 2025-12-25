@@ -126,7 +126,7 @@ White Queen piece recall = 0.918
 Black King piece recall = 0.951
 White King piece recall = 1.0
 
-Overall average piece F1-Score (armonic mean between recall and precision, in this context measures how well the model performs for each class)
+Overall average piece F1-Score (Measures how well the model performs, in this context better than using accuracy)
 Empty piece F1-Score = 0.986
 Black Pawn piece F1-Score = 0.918
 White Pawn piece F1-Score = 0.974
