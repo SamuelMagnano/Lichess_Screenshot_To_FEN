@@ -145,8 +145,8 @@ Overall average F1-Score = 0.895
 These metrics might be slightly inflated due to the fact that several screenshots are the same but with a different background and piece set. This decision was made to meet a time constraint, since assigning for each square its real class for 61 completely different boards would have been too time consuming.
 
 PS.  
-**Sometimes the import section requires a restart due to conflicts with different Pillow dependencies. Do as suggested by Colab since i am not aware of a solution from such problem.  
-Another problem might arises when loading the .pth since the network is trained on GPU but then, in an unknown way, does not let you load it back into GPU for testing. Just use CPU for that part since you don't need anything else but the imports, CNN definition and target_names prior to that part of the project.  
+**Sometimes the import section requires a restart due to conflicts with different Pillow dependencies. Do as suggested by Colab since i am not aware of a solution for such problem.  
+Another problem might arises when loading the .pth since the network is trained on GPU but then, in an unknown way to me, does not let you load it back into GPU for testing. Just use CPU for that part since you don't need anything else but the imports, CNN definition and target_names prior to that part of the project.  
 The CNN .pth is called bleeding because i add bleeding to the images, creating in the training set images blank spaces in one or two randomly selected side in order to better classify misaligned pieces derived from poorly screenshot cropping.**
 
 ## Python fen.py
